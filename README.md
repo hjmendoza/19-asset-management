@@ -15,8 +15,10 @@
 
 #### Description
 * create an AWS account
+* Create an S3 Bucket
 * create an AWS Access Key and Secret
-  * add the Access Key and Secret to your `.env` file
+  * add the Bucket, Access Key and Secret to your `.env` file
+  * `AWS_BUCKET`, `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`
 * create a new model that represents a file type that you want to store on AWS S3
   * ex: `.mp3`, `.mp4`, `.png`, etc
 * create a test that uploads one of these files to your route
