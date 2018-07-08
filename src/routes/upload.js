@@ -30,8 +30,8 @@ uploadRouter.post('/upload', auth, upload.any(), (req, res, next) => {
       res.send(output);
     })
     .catch(next);
-
-  res.sendStatus(418);
+    
+    res.sendStatus(418);
   
 });
 

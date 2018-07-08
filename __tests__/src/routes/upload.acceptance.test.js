@@ -20,7 +20,7 @@ describe('/upload', () => {
     return request.get('/signin')
       .auth('john','john')
       .then(response => {
-        return request.post(`/upload`)
+        return supertest.post(`/upload`)
           .set('Authorization', `Bearer ${response.text}`)
           .field('title', 'my image')
           .attach('img', `${__dirname}/asset/mario-sell.gif`)
